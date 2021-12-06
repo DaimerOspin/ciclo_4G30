@@ -1,0 +1,85 @@
+.container-fluid{
+    background-color: #e21515;
+    opacity: 1;
+    /* background-image:  radial-gradient(#475560 0.9px, transparent 0.9px), radial-gradient(#475560 0.9px, #eae9eb 0.9px);  */
+    background-size:1000px 10px;
+    background-position: 0 0,18px 18px;
+}
+.services-info {
+    padding: 20px;
+    text-align: center;
+}
+#servicio2 :hover{
+    opacity: 0.07;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
+
+
+}
+.servicio2 {
+    border-radius: 50px;
+   
+    
+}
+.titu-services{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: azure;
+    background-color: rgb(61, 61, 61);
+    border: 3px solid color rgb(24, 131, 131);
+}
+
+#servicio1{
+    border: 2px solid rgb(255, 255, 255); 
+    
+   
+    color: rgb(14, 0, 0);
+    border: 3px solid rgb(216, 204, 149); 
+    
+    background-image:url("../imgre/patin.jpg");
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+}
+#servicio2{
+    border: 2px solid rgb(255, 255, 255); 
+   
+    color: rgb(14, 0, 0);
+    border: 3px solid rgb(216, 204, 149); 
+    background-color: rgb(61, 61, 61); 
+    background-image:url("../imgre/pa.jpeg");
+    ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+#servicio3{
+    border: 2px solid rgb(255, 255, 255); 
+   
+    color: rgb(14, 0, 0);
+    border: 3px solid rgb(216, 204, 149); 
+    background-color: rgb(61, 61, 61);
+    background-image:url("../imgre/patineta1.jfif");
+    background-size: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.titulo-servicios{
+    font-family:'Times New Roman', Times, serif;
+     font-size: 2em; color: rgb(216, 204, 149);
+
+}
+.img-servicios{
+    width:200px; border-radius:20%;
+    height: 150px;
+    margin-top: 24px; 
+}
+.wrapper{
+    
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 15px;
+        grid-auto-rows: 100px 200px;
+      
+}
+.services-section{
+ 
+    display: flex;
+}

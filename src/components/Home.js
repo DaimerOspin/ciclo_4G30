@@ -9,7 +9,7 @@ export default class Home extends Component {
                 Home page
                 
                 <Products></Products>
-                <News></News>
+                {/* <News></News> */}
 
             </div>
         )

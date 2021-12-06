@@ -29,7 +29,7 @@ export default class Login extends Component {
             //actualizar l estado de logged
         }else{
             console.log(response.data.length)
-            alert('usurio o conraeña erroneos')
+            alert('usurio o contraseña erroneos')
         }
 
 
