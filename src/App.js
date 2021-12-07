@@ -46,7 +46,7 @@ export default class App extends react.Component{
             <Link to='/'>Home</Link>
             </li>
             <li>
-            <Link to='/products'>products</Link>
+            <Link to='/services'>services</Link>
             </li>
             <li>
             <Link to='/news'>news</Link>
@@ -60,8 +60,8 @@ export default class App extends react.Component{
         <div className='body-container'>
         <Routes>
           <Route path='/' element={<Home />}></Route>
-          <Route path='/products' element={<Products />}></Route>
-          <Route path='/login' element={<Home />}></Route>
+          <Route path='/services' element={<Products />}></Route>
+          <Route path='/login' element={<Login />}></Route>
           <Route path='*'elememt={<NotFound/>}></Route>
           <Route path='/news' element={<News />}></Route>
         </Routes>

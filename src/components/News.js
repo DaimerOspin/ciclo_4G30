@@ -1,16 +1,20 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import "../css/news.css";
+
 
 export default class news extends Component {
     render() {
+        
         return (
+            
             <div class="container-fluid">
                 
                 <h2 class="titulo-noticias"  >Seccion Noticias</h2>
-                    <section id="news" class="news-section">
+                    <section id="news" className="news-section">
                         <div class="row row-cols-1 row-cols-md-2 g-4 ">
                             <div  class="col">
                                 <div id= "new"    class="card">
-                                    <img width="20px" height="200px" src="https://cr00.epimg.net/radio/imagenes/2020/01/14/bogota/1578998655_860110_1578999267_noticia_normal.jpg" class="card-img-top" alt="..."/>
+                                    <img width="300px" height="200px"  src="https://cr00.epimg.net/radio/imagenes/2020/01/14/bogota/1578998655_860110_1578999267_noticia_normal.jpg" className="card-img-top" alt="..."/>
                                     <div  class="card-body ">
                                         <h5 class="titulo-news"  ><b>Operación en algunas zonas de Bogotá</b></h5>
                                         <p id="parra" class="card-text " >

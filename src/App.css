@@ -28,9 +28,20 @@
   color: #61dafb;
 }
 .formulario{
-  align-items: center;
-  align-content: center;
+  align-items:baseline;
+  align-content:center;
   width: 100%;
+  margin: 50px;
+  border:  5px;
+  border-color: #12718b;
+  border-style: double ;
+  padding: 30px;
+  width: auto;
+}
+
+.formulario input{
+  margin: 5px;
+  align-content:  center;
 }
 
 
