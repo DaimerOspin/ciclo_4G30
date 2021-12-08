@@ -2,12 +2,18 @@
 import './App.css';
 import react from 'react';
 import {Link,Routes, Route} from 'react-router-dom'; 
+import { db } from "./db";
 //componentes
 import Home from './components/Home';
 import Products from './components/Products';
 import Login from './components/Login';
 import NotFound from './components/NotFound';
 import News from './components/News';
+import ProductsWrap from './components/Products/ProductsWrap';
+import ProductCreate from './components/Products/ProductCreate';
+import Productos from './components/Products/Productos';
+import SpecificProduct from './components/Products/SpecificProduct';
+
 
 
 
@@ -52,6 +58,9 @@ export default class App extends react.Component{
             <Link to='/news'>news</Link>
             </li>
             <li>
+              <Link to="/Products">Products</Link>
+            </li>
+            <li>
             <Link to='/login'>login</Link>
             </li>
           </ul>
@@ -61,6 +70,11 @@ export default class App extends react.Component{
         <Routes>
           <Route path='/' element={<Home />}></Route>
           <Route path='/services' element={<Products />}></Route>
+          <Route path="/Products" element={<ProductsWrap />}>
+            <Route path="/Products" element={<Productos />}></Route>
+            <Route path="/Products/:productId" element={<SpecificProduct />} />
+            <Route path="/Products/Create" element={<ProductCreate />}></Route>
+          </Route>
           <Route path='/login' element={<Login />}></Route>
           <Route path='*'elememt={<NotFound/>}></Route>
           <Route path='/news' element={<News />}></Route>

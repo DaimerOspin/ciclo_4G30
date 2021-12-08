@@ -44,7 +44,21 @@
   align-content:  center;
 }
 
+.containerProducts {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.productImage {
+  height: 300px;
+  width: 300px;
+}
+
+.productElement {
+  margin: 7px;
+}
 
 @keyframes App-logo-spin {
   from {
